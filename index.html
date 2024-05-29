@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header-container">
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <p class="header__descr">Sign-up for our 30-day trial. <span> No credit card required.</span></p>
+    </header>
+
+    <main class="main__container">
+      <section class="main__sect-1">
+        <div class="main__pageview-stack">
+          <h2 class="main__pageview"><span class="pageview">100k</span> Pageviews</h2>
+          <h3 class="main__month-desktop hidden"><span class="month">$16.00 </span> /month</h3>
+        </div>
+        <div class="main__bar-wrap">         
+            <input type="range" name="range" id="range" value="3" min="1" max="5"> 
+        </div>
+        <h3 class="main__month-mobile"><span class="month">$16.00 </span> / month</h3>
+        <div class="main__bill-stack">
+          <h4 class="main__bill-month">Monthly Billing</h4>
+          <button type="button" class="main__bill-btn">
+            <div class="main__btn-circle"></div>
+          </button>
+          <h4 class="main__bill-year">Yearly Billing <div class="main__discount">-25% <span class="discount hidden">discount</span></div></h4>
+        </div>
+      </section>
+      <hr>
+      <section class="main__sect-2">
+        <div class="main__trial-stack">
+          <ul class="main__trial-list-wrap">
+            <li><img src="images/icon-check.svg" alt="">Unlimited websites</li>
+            <li><img src="images/icon-check.svg" alt="">100% data ownership</li>
+            <li><img src="images/icon-check.svg" alt="">Email reports</li>
+          </ul>
+          <button class="main__trial-btn">Start my trial</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
